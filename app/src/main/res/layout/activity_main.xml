@@ -1,0 +1,240 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/combo_one"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.example.geres.fastorder.MainActivity"
+    android:background="@drawable/innoutsign">
+
+    <android.support.constraint.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+        <TextView
+        android:id="@+id/fastorderTV"
+        android:layout_width="wrap_content"
+        android:layout_height="87dp"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginLeft="8dp"
+        android:layout_marginRight="8dp"
+        android:layout_marginTop="8dp"
+        android:fontFamily="casual"
+        android:text="_-`FASTORDER`-_"
+        android:textAlignment="center"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        android:layout_marginStart="8dp"
+        android:layout_marginEnd="8dp" />
+
+        <ImageView
+            android:id="@+id/burger_one"
+            android:layout_width="83dp"
+            android:layout_height="83dp"
+            android:layout_marginLeft="16dp"
+            android:layout_marginStart="16dp"
+            android:adjustViewBounds="false"
+            android:background="@android:color/background_light"
+            android:elevation="0dp"
+            android:scaleType="centerCrop"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:srcCompat="@mipmap/doubledouble"
+            android:layout_marginTop="14dp"
+            app:layout_constraintTop_toBottomOf="@+id/fastorderTV" />
+
+        <TextView
+            android:id="@+id/description_oneTV"
+            style="@style/menuItem"
+            android:layout_width="131dp"
+            android:layout_height="83dp"
+            android:layout_marginLeft="27dp"
+            android:layout_marginStart="27dp"
+            android:layout_marginTop="14dp"
+            android:lineSpacingExtra="6sp"
+            android:text="Double Cheese Burger with Fries and Drink"
+            android:textAlignment="center"
+            android:textStyle="bold|italic"
+            app:layout_constraintLeft_toRightOf="@+id/burger_one"
+            app:layout_constraintTop_toBottomOf="@+id/fastorderTV" />
+
+        <TextView
+        android:id="@+id/price_oneTV"
+        android:layout_width="71dp"
+        android:layout_height="29dp"
+        android:layout_marginLeft="8dp"
+        android:layout_marginRight="8dp"
+        android:text="@string/_6_99"
+        android:textAlignment="center"
+        android:textSize="25sp"
+        app:layout_constraintHorizontal_bias="0.8"
+        app:layout_constraintLeft_toRightOf="@+id/description_oneTV"
+        app:layout_constraintRight_toRightOf="parent"
+        android:layout_marginStart="8dp"
+        android:layout_marginEnd="8dp"
+        android:layout_marginTop="11dp"
+        app:layout_constraintTop_toBottomOf="@+id/cmb_oneET" />
+
+        <ImageView
+            android:id="@+id/burger_two"
+            android:layout_width="81dp"
+            android:layout_height="83dp"
+            android:layout_marginLeft="16dp"
+            android:layout_marginStart="16dp"
+            android:layout_marginTop="23dp"
+            android:background="@android:color/background_light"
+            android:elevation="0dp"
+            android:scaleType="centerCrop"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/burger_one"
+            app:srcCompat="@mipmap/combotwo" />
+
+        <TextView
+            style="@style/menuItem"
+            android:id="@+id/description_twoTV"
+            android:layout_width="132dp"
+            android:layout_height="83dp"
+            android:layout_marginLeft="27dp"
+            android:layout_marginStart="27dp"
+            android:layout_marginTop="25dp"
+            android:lineSpacingExtra="10sp"
+            android:text="Cheese Burger with Fries and Drink"
+            android:textAlignment="center"
+            android:textStyle="bold|italic"
+            app:layout_constraintLeft_toRightOf="@+id/burger_two"
+            app:layout_constraintTop_toBottomOf="@+id/description_oneTV" />
+
+        <EditText
+            android:id="@+id/cmb_twoET"
+            android:layout_width="71dp"
+            android:layout_height="43dp"
+            android:layout_marginLeft="8dp"
+            android:layout_marginRight="16dp"
+            android:hint="QTY"
+            android:inputType="number"
+            android:textAlignment="center"
+            app:layout_constraintHorizontal_bias="1.0"
+            app:layout_constraintLeft_toRightOf="@+id/description_twoTV"
+            app:layout_constraintRight_toRightOf="parent"
+            android:layout_marginTop="23dp"
+            app:layout_constraintTop_toBottomOf="@+id/price_oneTV"
+            android:layout_marginStart="8dp"
+            android:layout_marginEnd="16dp" />
+
+        <TextView
+        android:id="@+id/price_twoTV"
+        android:layout_width="71dp"
+        android:layout_height="29dp"
+        android:layout_marginRight="8dp"
+        android:text="@string/_5_99"
+        android:textAlignment="center"
+        android:textSize="25sp"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/cmb_twoET"
+        android:layout_marginStart="8dp"
+        android:layout_marginEnd="8dp"
+            app:layout_constraintLeft_toRightOf="@+id/description_twoTV"
+
+        android:layout_marginLeft="8dp"
+        app:layout_constraintHorizontal_bias="0.804"
+            android:layout_marginTop="11dp" />
+
+        <ImageView
+            android:id="@+id/burger_three"
+            android:layout_width="84dp"
+            android:layout_height="83dp"
+            android:layout_marginLeft="16dp"
+            android:layout_marginStart="16dp"
+            android:layout_marginTop="14dp"
+            android:background="@android:color/background_light"
+            android:elevation="0dp"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/burger_two"
+            app:srcCompat="@mipmap/hamburger" />
+
+        <TextView
+            android:id="@+id/description_threeTV"
+            android:layout_width="132dp"
+            android:layout_height="83dp"
+            android:layout_marginLeft="27dp"
+            android:layout_marginStart="27dp"
+            android:lineSpacingExtra="10sp"
+            android:text="Hamburger with Fries and Drink"
+            android:textAlignment="center"
+            style="@style/menuItem"
+            android:textStyle="bold|italic"
+            app:layout_constraintLeft_toRightOf="@+id/burger_three"
+            android:layout_marginTop="12dp"
+            app:layout_constraintTop_toBottomOf="@+id/description_twoTV" />
+
+        <EditText
+            android:id="@+id/cmb_threeET"
+            android:layout_width="71dp"
+            android:layout_height="43dp"
+            android:layout_marginLeft="8dp"
+            android:layout_marginRight="16dp"
+            android:hint="QTY"
+            android:inputType="number"
+            android:textAlignment="center"
+            app:layout_constraintHorizontal_bias="1.0"
+            app:layout_constraintLeft_toRightOf="@+id/description_threeTV"
+            app:layout_constraintRight_toRightOf="parent"
+            android:layout_marginTop="14dp"
+            app:layout_constraintTop_toBottomOf="@+id/price_twoTV"
+            android:layout_marginStart="8dp"
+            android:layout_marginEnd="16dp" />
+
+
+        <TextView
+        android:id="@+id/price_threeTV"
+        android:layout_width="71dp"
+        android:layout_height="29dp"
+        android:layout_marginRight="8dp"
+        android:text="@string/_4_99"
+        android:textAlignment="center"
+        android:textSize="25sp"
+        app:layout_constraintRight_toRightOf="parent"
+        android:layout_marginStart="8dp"
+        android:layout_marginEnd="8dp"
+            app:layout_constraintLeft_toRightOf="@+id/description_threeTV"
+        android:layout_marginLeft="8dp"
+        app:layout_constraintHorizontal_bias="0.789"
+            android:layout_marginTop="11dp"
+            app:layout_constraintTop_toBottomOf="@+id/cmb_threeET" />
+
+        <EditText
+            android:id="@+id/cmb_oneET"
+            android:layout_width="71dp"
+            android:layout_height="43dp"
+            android:hint="QTY"
+            android:inputType="number"
+            android:textAlignment="center"
+            android:layout_marginRight="16dp"
+            app:layout_constraintRight_toRightOf="parent"
+            android:layout_marginTop="14dp"
+            app:layout_constraintTop_toBottomOf="@+id/fastorderTV"
+            app:layout_constraintLeft_toRightOf="@+id/description_oneTV"
+            android:layout_marginLeft="8dp"
+            app:layout_constraintHorizontal_bias="1.0"
+            android:layout_marginStart="8dp"
+            android:layout_marginEnd="16dp" />
+
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/readytoorder"
+            android:text="FASTORDER"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintRight_toRightOf="parent"
+            app:layout_constraintBottom_toBottomOf="parent"
+            android:onClick="fastorder"
+            android:layout_marginTop="8dp"
+            app:layout_constraintTop_toBottomOf="@+id/description_threeTV" />
+
+    </android.support.constraint.ConstraintLayout>
+
+
+
+
+</ScrollView>

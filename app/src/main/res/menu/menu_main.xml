@@ -1,0 +1,16 @@
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    tools:context=".MainActivity">
+    <group android:checkableBehavior="single">
+        <item android:id="@+id/in_n_out"
+              android:orderInCategory="1"
+            app:showAsAction="never"
+            android:title="@string/innout"/>
+        <item android:id="@+id/phils"
+            android:orderInCategory="2"
+            app:showAsAction="never"
+            android:title="@string/phils"/>
+    </group>
+
+</menu>
